@@ -24,13 +24,11 @@ public class GenerateParentheses {
             res.add(builder.toString());
             return;
         }
-
         if (open < n) {
             builder.append("(");
             bt(builder, res, open + 1, close, n);
             builder.deleteCharAt(builder.length() - 1);
         }
-
         if (close < open) {
             builder.append(")");
             bt(builder, res, open, close + 1, n);

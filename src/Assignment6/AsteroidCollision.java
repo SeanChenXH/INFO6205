@@ -15,11 +15,8 @@ import java.util.Stack;
  */
 public class AsteroidCollision {
     public int[] asteroidCollision(int[] asteroids) {
-
         Stack<Integer> stack = new Stack<>();
-
         for (int ast : asteroids) {
-
             collision:
             {
                 while (!stack.isEmpty() && ast < 0 && stack.peek() > 0) {

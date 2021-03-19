@@ -28,7 +28,6 @@ public class SubtreeOfAnotherTree {
         if (s == null || t == null) {
             return false;
         }
-
         return s.val == t.val && isSame(s.left, t.left) && isSame(s.right, t.right);
     }
 }

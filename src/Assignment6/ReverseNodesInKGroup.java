@@ -10,9 +10,7 @@ package Assignment6;
  */
 public class ReverseNodesInKGroup {
     public ListNode reverseKGroup(ListNode head, int k) {
-
         int count = 0;
-
         ListNode pointer = head;
 
         while (count < k && pointer != null) {
